@@ -11,18 +11,6 @@
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Styles -->
-    <style>
-        .container {
-            margin: auto;
-            max-width: 900px;
-        }
-
-        .wrapper {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-    </style>
 </head>
 <body class="home">
     @include('navbar')

@@ -11,6 +11,18 @@ h1 {
     margin-bottom: 50px;
 }
 
+
+/* Home */
+.home .container {
+    max-width: 1290px;
+    width: 100%;
+    margin: 0 auto 50px;
+}
+
+.home .movies .wrapper {
+    gap: 20px;
+}
+
 /* Navbar */
 .menu-header {
     margin: 0;
