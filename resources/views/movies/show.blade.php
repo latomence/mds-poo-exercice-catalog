@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/app.css">
     <title>{{ $movie->originalTitle}}</title>
 </head>
-<body>
+<body class="movies_show">
+    @include('navbar')
     <!-- Movies -->
     <div class="container">
         <h2>{{ $movie->originalTitle}}</h2>
-        <div class="content">
+        <div class="content movie">
             <img src="{{ $movie->poster}}" alt="">
         </div>
         <div class="plot">
@@ -18,5 +20,6 @@
             <p>{{ $movie->plot}}</p>
         </div>
     </div>
+    <a href="javascript:history.back()">Retour</a>
 </body>
 </html>
