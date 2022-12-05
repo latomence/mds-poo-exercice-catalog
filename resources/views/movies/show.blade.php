@@ -11,15 +11,15 @@
     @include('navbar')
     <!-- Movies -->
     <div class="container">
-        <h2>{{ $movie->originalTitle}}</h2>
         <div class="content movie">
             <img src="{{ $movie->poster}}" alt="">
         </div>
+        <h2>{{ $movie->originalTitle}}</h2>
         <div class="plot">
             <h3>Synopsis :</h3>
             <p>{{ $movie->plot}}</p>
         </div>
+        <a href="javascript:history.back()">Retour</a>
     </div>
-    <a href="javascript:history.back()">Retour</a>
 </body>
 </html>

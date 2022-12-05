@@ -7,9 +7,13 @@ use Illuminate\Http\Request;
 
 class GenreController extends Controller
 {
-    public function list() {
+    public function list(Request $request) {
 
-        $genres = Genre::paginate(20);
+        $genres = Genre::all();
+        $genre = $request->query('genre');
+
+        if($genre != null){
+        };
 
         return view('movies.genres', ['genres' => $genres]);
     }
