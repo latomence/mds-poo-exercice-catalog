@@ -82,6 +82,29 @@ h1 {
     margin-bottom: 15px;
 }
 
+.nav .dropdown {
+    position: relative;
+}
+
+ul.submenu {
+    position: absolute;
+    list-style: none;
+    left: -999em;
+    text-align: left;
+    z-index: 1000;
+    padding: 10px;
+    background: white;
+    box-shadow: 0px 3px 6px 0px #0000002e;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+li.dropdown:hover ul.submenu {
+    left: auto !important;
+}
+
+
 
 /* Movies list */
 .movies_list .movies {

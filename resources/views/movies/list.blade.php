@@ -14,6 +14,7 @@
         <div class="top">
             <a href="/movies?orderBy=primaryTitle&order=asc">Order By Asc</a>
             <a href="/movies?orderBy=primaryTitle&order=desc">Order By Desc</a>
+            <a href="/movies">Clear</a>
         </div>
         <div class="genres">
             @foreach ($genres as $genre)
