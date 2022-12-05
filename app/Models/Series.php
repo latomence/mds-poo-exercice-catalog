@@ -30,4 +30,12 @@ class Series extends Model
     {
         return $this->hasMany(Episode::class, 'series_id');
     }
+    
+    /**
+     * The genres that belong to the series.
+     */
+    public function genres()
+    {
+        return $this->belongsToMany(Genre::class, 'series_genres');
+    }
 }
